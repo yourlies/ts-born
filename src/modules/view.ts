@@ -1,5 +1,7 @@
-import { pages } from '../utils/path'
+import { page } from '../utils/path'
 
-const view = (name: name) => {
-  pages('views/index.html')
+const view = (name: string) => {
+  return page('index.html')
 }
+
+export { view }

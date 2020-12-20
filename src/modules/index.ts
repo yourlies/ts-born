@@ -1,5 +1,8 @@
+import { view } from './view'
+
 const response = () => {
-  return 123
+  const text = view('index.html')
+  return text
 }
 
 export { response }

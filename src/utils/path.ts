@@ -8,5 +8,8 @@ import { rootPath } from '../config/path'
 const pages = (name: string) => {
   return fs.readdirSync(path.join(rootPath, '/pages/', name))
 }
+const page = (name: string, dir = 'views') => {
+  return fs.readFileSync(path.join(rootPath, '/pages/', dir, '/', name), 'utf-8')
+}
 
-export { pages }
+export { pages, page }
